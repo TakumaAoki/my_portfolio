@@ -11,22 +11,25 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :message_name %>
-  </div>
+  <div class="messages-main">
+   
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name, id: :message_name %>
+    </div>
 
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email, id: :message_email %>
-  </div>
+    <div class="field">
+      <%= form.label :email %>
+      <%= form.text_field :email, id: :message_email %>
+    </div>
 
-  <div class="field">
-    <%= form.label :content %>
-    <%= form.text_area :content, id: :message_content %>
-  </div>
+    <div class="field">
+      <%= form.label :content %>
+      <%= form.text_area :content, id: :message_content %>
+    </div>
 
-  <div class="actions">
-    <%= form.submit %>
+    <div class="actions">
+      <%= form.submit %>
+    </div>
   </div>
 <% end %>
