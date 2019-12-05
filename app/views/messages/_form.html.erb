@@ -1,17 +1,17 @@
-<%= form_with(model: message, local: true) do |form| %>
+<%= form_with(model: message, local: true, class: "messages-main") do |form| %>
   <% if message.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(message.errors.count, "error") %> prohibited this message from being saved:</h2>
 
       <ul>
-      <% message.errors.full_messages.each do |message| %>
+      <% @message.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
     </div>
   <% end %>
 
-  <div class="messages-main">
+  
    
     <div class="field">
       <%= form.label :name %>
@@ -29,7 +29,7 @@
     </div>
 
     <div class="actions">
-      <%= form.submit %>
+      <%= form.submit "Click button", class: "btn btn-primary" %>
     </div>
-  </div>
+  
 <% end %>
