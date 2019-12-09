@@ -1,4 +1,4 @@
-<%= form_with(model: message, local: true, class: "messages-main") do |form| %>
+<%= form_with(model: message, local: true, class: "messages-wrapper") do |form| %>
   <% if message.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(message.errors.count, "error") %> prohibited this message from being saved:</h2>
@@ -14,22 +14,22 @@
   
    
     <div class="field">
-      <%= form.label :name %>
+      <p>お名前<span class="required">必須</span></p>
       <%= form.text_field :name, id: :message_name %>
     </div>
 
     <div class="field">
-      <%= form.label :email %>
+      <p>メールアドレス<span class="required">必須</span></p>
       <%= form.text_field :email, id: :message_email %>
     </div>
 
     <div class="field">
-      <%= form.label :content %>
-      <%= form.text_area :content, id: :message_content %>
+      <%= form.label :contact,"お問い合わせ内容" %>
+      <%= form.text_area :content, id: :message_content, rows:"10" %>
     </div>
 
     <div class="actions">
-      <%= form.submit "Click button", class: "btn btn-primary" %>
+      <%= form.submit "内容を送信する", class: "btn btn-primary btn-sm" %>
     </div>
   
 <% end %>

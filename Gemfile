@@ -9,7 +9,7 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
 gem 'bootstrap-sass', '3.3.7'
-gem 'font-awesome-rails'
+gem 'font-awesome-sass', '~> 5.4.1'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 # Use sqlite3 as the database for Active Record

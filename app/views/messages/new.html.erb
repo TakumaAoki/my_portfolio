@@ -1,8 +1,13 @@
-<div class="new-messages">
-    <h1>New Message</h1>
+<div class="messages-wrapper">
+    <h1>Contact</h1>
+
+    <p class="text">ご相談などお気軽にお問い合わせくださいませ。
+    <br>
+    下記フォームよりご記入ください。必須の項目は必ずご記入お願いします。
+    </p>
 
     <%= render 'form', message: @message %>
 
-    <%= link_to 'Back', messages_path, class: "btn btn-primary" %>
+    <%= link_to 'Back', messages_path, class: "btn btn-default" %>
 
 </div>
