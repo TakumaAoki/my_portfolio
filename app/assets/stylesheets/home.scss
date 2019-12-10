@@ -5,6 +5,7 @@
 .wrapper{
     background-color: #f3f3f3;
     width: 100%;
+    height: 820px;
 }
 
 .home-top{
@@ -29,11 +30,12 @@
 .home-main{
     text-align:center;
     height: 250px;
+    margin-top: 80px;
 }
 
 .icons{
     list-style: none;
-    
+    font-weight: bold;
 }
 
 #icon-1,#icon-2,#icon-3{
@@ -42,3 +44,8 @@
     text-decoration: none;
     font-size: 30px;
 }
+
+.fas{
+    margin-right: 10px;
+}
+

@@ -16,10 +16,21 @@
 }
 
 .field{
-    padding: 40px 0;
+    padding: 10px 0;
+    p{
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
 }
 
 .required{
     color:white ;
-    background-color: red;
+    background-color: #f45555;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.text{
+    margin: 20px 0 ;
 }

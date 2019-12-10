@@ -1,19 +1,24 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Skills</h1>
+  <p id="notice"><%= notice %></p>
 
-
-  
-
-  
-
-  <div class="row">
-    <% @skills.each do |skill| %>
-      <div class="col-sm-6 col-md-3">
-        <%=image_tag skill.image, class:"skill-img"%>
-      </div>  
-      
-    <% end %>
+<div class="wrapper">
+  <div class=section-title-skill>
+    <h2 class="section-title">
+      <i class="fas fa-lightbulb fa-lg">
+        <span>SKILL</span>
+      </i>      
+    </h2>
   </div>
+ 
+  <div class="skill-content">
+    <div class="row">
+      <% @skills.each do |skill| %>
+        <div class="col-sm-6 col-md-3">
+          <%=image_tag skill.image, class:"skill-img"%>          
+        </div>  
+      <% end %>
+    </div>
+  </div>
+</div>    
 
 
