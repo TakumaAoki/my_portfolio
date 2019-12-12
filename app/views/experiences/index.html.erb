@@ -11,16 +11,18 @@
 
 
 
-  
+  <div class="experience-contents">
+   <div class="content">
     <% @experiences.each do |experience| %>
         <%= experience.name %>
         <%= experience.startdate %>
         <%= experience.enddate %>
         <%= experience.description %>
         <%= link_to 'Show', experience %>
-        
+   </div>     
       
     <% end %>
+  </div>  
 </div>    
   
 
