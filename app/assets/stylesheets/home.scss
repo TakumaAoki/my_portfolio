@@ -38,14 +38,17 @@
     font-weight: bold;
 }
 
-#icon-1,#icon-2,#icon-3{
+.icon{
     margin: 60px 0;
     font-family: 'Open sans', sans-serif;
-    text-decoration: none;
+    text-decoration: none !important;
     font-size: 30px;
+    color: black !important;
 }
 
-.fas{
-    margin-right: 10px;
+@media only screen and (max-width: 600px){
+    .logo h1{
+        font-size: 70px;
+    }
 }
 
