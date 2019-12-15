@@ -19,12 +19,11 @@
     <div class="collapse" id="collapse_<%= experience.id %>">
       <div class="well">
         <%= experience.name %>
-        <%= experience.startdate.year %>/
-        <%= experience.startdate.month %>
-        <%= experience.enddate.year %>/
+        <%= experience.startdate.year %> /
+        <%= experience.startdate.month %> 〜
+        <%= experience.enddate.year %> /
         <%= experience.enddate.month %>
         <%= experience.description %>
-        
       </div>   
     </div>  
     <% end %>
