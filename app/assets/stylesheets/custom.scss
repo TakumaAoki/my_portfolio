@@ -2,3 +2,10 @@
 @import "bootstrap";
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
+
+.back-btn{
+    text-decoration: none !important;
+    text-align: left;
+    position: absolute;
+    left: 5%;
+}
