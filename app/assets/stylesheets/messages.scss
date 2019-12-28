@@ -41,3 +41,9 @@
     margin-left: 10px;
     font-size: 15px;
 }
+
+@media only screen and (max-width: 600px){
+    .section-title-message h2{
+        font-size: 30px;
+    }
+}
