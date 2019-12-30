@@ -18,14 +18,14 @@
    <div class="content">
     <% @experiences.each do |experience| %>
     <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapse_<%= experience.id %>" aria-expanded="false" aria-controls="collapse_<%= experience.id %>">
-    Link with href</a>
+    <%= experience.name %>
+    <%= experience.startdate.year %> /
+    <%= experience.startdate.month %> 〜
+    <%= experience.enddate.year %> /
+    <%= experience.enddate.month %>
+    </a>
     <div class="collapse" id="collapse_<%= experience.id %>">
       <div class="well">
-        <%= experience.name %>
-        <%= experience.startdate.year %> /
-        <%= experience.startdate.month %> 〜
-        <%= experience.enddate.year %> /
-        <%= experience.enddate.month %>
         <%= experience.description %>
       </div>   
     </div>  
