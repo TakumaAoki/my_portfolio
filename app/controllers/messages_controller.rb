@@ -26,7 +26,7 @@ class MessagesController < ApplicationController
     respond_to do |format|
       if @message.save
         MessageMailer.with(email: @message.email).welcome_email.deliver_now
-        format.html { redirect_to @message, notice: 'Message was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Message was successfully created.' }
         format.json { render :show, status: :created, location: @message }
       else
         format.html { render :new }
