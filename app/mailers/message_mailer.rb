@@ -5,4 +5,12 @@ class MessageMailer < ApplicationMailer
         @email = params[:email]
         mail(to: @email, subject: '私の素敵なサイトへようこそ')
     end
+
+    def check_email
+        @email = params[:email]
+        @content = params[:content]
+        @name = params[:name]
+        mail(to:'taku1106aoki@gmail.com')
+    end
 end
+
